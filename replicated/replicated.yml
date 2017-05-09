@@ -28,21 +28,21 @@ admin_commands:
   component: npme
   image:
     image_name: npmjs/policy-follower
-    version: '2.2.11'
+    version: '2.2.12'
 - alias: add-package
   command: [sh, /etc/npme/add-package.sh]
   run_type: exec
   component: npme
   image:
     image_name: npmjs/policy-follower
-    version: '2.2.11'
+    version: '2.2.12'
 - alias: remove-package
   command: [sh, /etc/npme/remove-package.sh]
   run_type: exec
   component: npme
   image:
     image_name: npmjs/policy-follower
-    version: '2.2.11'
+    version: '2.2.12'
 - alias: edit-homepage
   command: [sh, /etc/npme/homepage.sh]
   run_type: exec
@@ -279,7 +279,7 @@ components:
         when: '{{repl ConfigOptionNotEquals "etc_hosts_2_ip" "" }}'
   - source: public
     image_name: npmjs/policy-follower
-    version: '2.2.11'
+    version: '2.2.12'
     name: npme-pf
     privileged: false
     restart:
